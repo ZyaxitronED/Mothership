@@ -36,7 +36,9 @@
   <a-asset-item id="roughcauldron1-mtl" src="roughcauldron1.mtl"></a-asset-item>
 </a-assets>
 
-<a-obj-model src="#roughcauldron1-obj" mtl="#roughcauldron1-mtl"></a-obj-model>
+<a-obj-model src="#roughcauldron1-obj" mtl="#roughcauldron1-mtl">
+<setAttribute('position', {x: 1, y: 2, z: 3})></setAttribute>
+</a-obj-model>
 
 <a-entity id="spookysound" geometry="primitive: plane" material="color: blue" position="0 3 -4.5" sound="src: Spooky Ambience.mp3; autoplay: true"></a-entity>
 
