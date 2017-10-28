@@ -32,16 +32,11 @@
   <img id="floor" src="texture_149_by_deadcalm_stock.jpg">
   <img id="scary2" src="Pumpkin_Color.jpg">
   <img id="stem" src="pumpkinstemtexture.jpg">
+  <img id="cauldron" src="0067-wrought-iron-metal-texture-seamless-hr.jpg"
   <a-asset-item id="cauldron" src="cauldron3.DAE"></a-asset-item>
 </a-assets>
 
-<a-entity collada-model="#cauldron" var objectLoader = new THREE.ObjectLoader();
-            objectLoader.load("untitled-scene.json", function ( obj ) {
-                sceneEl.object3D.add( obj );
-                obj.scale.set(10,1,010);
-                obj.rotation.set(0,179,0);
-                obj.position.set(0,0,10);
-            } );></a-entity>
+<a-entity src="#cauldron" collada-model="#cauldron"></a-entity>
 
 <a-entity id="spookysound" geometry="primitive: plane" material="color: blue" position="0 3 -4.5" sound="src: Spooky Ambience.mp3; autoplay: true"></a-entity>
 
